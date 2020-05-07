@@ -32,6 +32,9 @@ function search(query, container) {
   })
   .then(function(data) {
     //console.log(data);
+    for(let countryData of data) {
+      createTableRow(countryData, container);
+    }
 
   });
 
